@@ -1,0 +1,21 @@
+name: "LOOP"
+description: "LOOP"
+inputs:
+  separator:
+    description: "string"
+    required: true
+    default: "\n"
+  source:
+    description: "string"
+    required: true
+    default: ""
+  list:
+    description: "list"
+    required: true
+    default: ""
+outputs:
+  value: # id of output
+    description: "status: ok|fail"
+runs:
+  using: "node12"
+  main: "dist/index.js"
